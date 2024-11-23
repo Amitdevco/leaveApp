@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="text">Create Leave Application</div>
+    <main>
+        <div class="blank"></div>
+        <form id="leaveForm" action="">
+            <input type="text" placeholder="Your name..." id="name" required>
+            <input type="number" placeholder="Class no..." id="class" required maxlength="2">
+            <input type="number" placeholder="Roll no..." id="Roll" required maxlength="2">
+            <input type="text" placeholder="School name..." id="scl" required>
+            <input type="text" placeholder="Reason..." id="Reason" required>
+            <input type="text" placeholder="Subject..." id="sub" required>
+            <!-- Date Inputs -->
+            <label for="startDate">Leave from:</label>
+            <input type="date" id="startDate" required placeholder="Leave from">
+            <label for="endDate">To:</label>
+            <input type="date" id="endDate" required placeholder="Leave to">
+            <button type="submit">Create</button>
+        </form>
+        <div class="blank"></div>
+    </main>
+    <div class="blank"></div>
+
+<div class="fbtn">
+    <button id="copyBtn" >Copy to Clipboard</button>
+    <button id="downloadBtn" >Download as Text</button>
+</div>
+    <div class="blank"></div>
+
+    <div class="contain" id="con" style="display:none;">
+        <p id="summary"></p>
+        <!-- Buttons for copy and download -->
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
